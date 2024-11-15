@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Công Tuyền - Thế Giới Đồ Cho Bé</title>
+	<link rel="shortcut icon" href="../img/logo.png" />
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/style_giohang.css">
+	<script src="../js/jquery-3.7.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+	<section class="myheader">
+		<div class="container py-2">
+			<div class="row">
+				<div class="col-md-3 text-center">
+					<a href="index.html" class="">
+						<img src="../img/logo.png"  class="img-fluid" alt="Logo" style="width: 110px;height: 90px;">
+					</a>
+				</div>
+
+				<div class="col-md-4">
+					<div class="input-group mb-3">
+						<input type="text" class="form-control mt-4" placeholder="Tìm kiếm...">
+						<span class="input-group-text mt-4" id="search"><i
+								class="fa-solid fa-magnifying-glass"></i></span>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="row mt-4">
+						<div class="col">
+							<div class="row">
+								<div class="col-md-3 ">
+									<div class="fs-3">
+										<a href="tel:0123456789" class="text-dark"><i class="fa-solid fa-phone"></i></a>
+									</div>
+								</div>
+								<div style="margin-top: 7px;" class="col-md-9">
+									<strong><span class="text-dark">Liên hệ</span></strong><br>
+								</div>
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="row">
+								<div class="col-md-3">
+									<div class="fs-3">
+										<a href="login.html" class="text-dark" id="login_taikhoan"><i
+												class="fa-regular fa-circle-user"></i></a>
+									</div>
+								</div>
+								<div style="margin-top: 7px;" class="col-md-9" id="loginText" >
+									<strong><span id="loginLink" class="text-dark" style="text-decoration: none;">Đăng
+											nhập</span></strong>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col mt-4">
+					<div class="row">
+						<div class="col-md-4">
+							<a href="giohang.html" class="position-relative">
+								<span class="fs-2">
+									<i class="fa-solid fa-cart-shopping" style="color: black;"></i>
+								</span>
+							</a>						
+						</div>
+						<div style="margin-top: 1px;margin-left: -25px;" class="col-md text-center">
+							<strong><span class="text-dark" style="text-decoration: none;display: inline;text-align: center;">Giỏ hàng</span></strong>
+						</div>
+						
+						<div class="col">
+							<a href="thongtintaikhoan.html" class="position-relative">
+								<span class="fs-2 ms-4">
+									<i class="fa-solid fa-circle-user" style="color: black;"></i>
+								</span>
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="mymenu">
+		<div class="container bg-light">
+			<div class="row align-items-center">
+				<div class="col-md-9">
+					<nav class="navbar navbar-expand-lg bg-light">
+						<div class="container-fluid">
+							<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+								<!-- Xóa class me-auto -->
+								<ul class="navbar-nav nav-tabs mb-2 mb-lg-0">
+									<li class="nav-item">
+										<a class="nav-link" aria-disabled="true" href="index.html">Trang chủ</a>
+									</li>
+									<li class="nav-item" onclick="scrollToProductTitle()">
+										<a class="nav-link" href="banchay.html">Bán chạy</a>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" role="button"
+											data-bs-toggle="dropdown" aria-expanded="false">
+											Sản phẩm
+										</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#" onclick="scrollToProductTitle()">Đồ bé trai</a></li>
+											<li><a class="dropdown-item" href="#" onclick="scrollToProductTitle2()">Đồ bé gái</a></li>
+											<li><a class="dropdown-item" href="#" onclick="scrollToProductTitle()">Đồ bộ</a></li>
+											<li><a class="dropdown-item" href="#" onclick="scrollToProductTitle()">Đồ đôi</a></li>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<a href="gioithieu.html" class="nav-link" aria-disabled="true">Giới thiệu</a>
+									</li>
+									
+									<li class="nav-item">
+										<a href="vai.html" class="nav-link" aria-disabled="true">Các loại vải</a>
+									</li>
+									<li class="nav-item">
+										<a href="tuvan.html" class="nav-link" aria-disabled="true">Tư vấn</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<main role="main">
+		<div class="container mt-4">
+			<div id="thongbao" class="alert alert-danger d-none face" role="alert">
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+			</div>
+
+			<h1 class="text-center">Giỏ hàng</h1>
+			<div class="row">
+				<div class="col col-md-12">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>STT</th>
+								<th>Ảnh sản phẩm</th>
+								<th>Tên sản phẩm</th>
+								<th>Số lượng</th>
+								<th>Đơn giá</th>
+								<th>Thành tiền</th>
+								<th>Hành động</th>
+								<td>....</td>
+							</tr>
+						</thead>
+						<tbody id="datarow">
+							
+						</tbody>
+					</table>
+
+					<a href="index.html" class="btn btn-warning btn-md">
+						<i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp;Quay về trang chủ</a>
+					<a class="btn btn-primary btn-md" id="btnthanhtoan" onclick="openPaymentBox()">
+						<i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Thanh toán</a>
+				</div>
+			</div>
+	</main>
+
+
+	<section class="footer bg-dark text-white py-4">
+		<hr>
+		<div class="row">
+			<div class="col-md-6 ">
+				<h5 class="m-lg-1">Công Tuyền - Thế giới đồ cho bé </h5>
+				<p class="m-0 m-lg-1">Cung cấp nhiều mẫu quần áo chất lượng </p>
+				<p class="m-0 m-lg-1">Địa chỉ: Nguyễn Văn Bảo, Gò Vấp, TP.HCM</p>
+				<p class="m-0 m-lg-1">Email: congtuyen@gmail.com</p>
+				
+				<p class="m-0 m-lg-1">Điện thoại: 0123456789</p>
+			</div>
+			<div class="col-md-6 contact">
+				<div class="row">
+					<div class="col">
+						<a href="sitemap.html"><img src="../img/logo.png" style="width: 140px; height: 120px;"></a><br>
+					</div>
+					<div class="col mt-3">
+						<a href="https://maps.app.goo.gl/r5DUL1pTx5QvgKiU8" target="_blank"><i class="fa-solid fa-location-dot fs-5 mb-3"></i></a>Location <br>
+						<a href="https://mail.google.com/mail/?view=cm&fs=1&to=congtuyen@gmail.com&su=Chào bạn&body=Nội dung của email" target="_blank"><i class="fa-solid fa-envelope fs-5 mb-3"></i></a>Email <br>
+						<a href="tel:0123456789"><i class="fa-solid fa-phone fs-5 mb-3"></i></a>Phone <br>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+	</div>
+</section>
+
+
+	<div id="paymentSuccess" class="overlay">
+		<div class="payment-box">
+			<span class="close-btn" onclick="closePaymentBox()">&times;</span>
+			<h2 class="text-success">Thanh Toán Thành Công</h2>
+			<p>Cảm ơn bạn đã thanh toán thành công!</p>
+			<a class="btn btn-primary btn-md" id="btnthanhtoan" onclick="closePaymentBox()">
+				Xác nhận</a>
+		</div>
+	</div>
+
+
+	<script>
+
+		function openPaymentBox() {
+			document.getElementById("paymentSuccess").style.display = "flex";
+		}
+		
+
+		function closePaymentBox() {
+			document.getElementById("paymentSuccess").style.display = "none";
+		}
+
+		document.getElementById("paymentButton").addEventListener("click", function () {
+			openPaymentBox();
+		});
+	</script>
+
+
+	<script src="../js/index.js"></script>
+	<script src="../js/item.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+    if (localStorage.getItem('username')) {
+        var username = localStorage.getItem('username');
+        var spanElement = document.getElementById('loginLink');
+        spanElement.innerText = username;
+
+        $("#login_taikhoan").click(function (e) {
+            e.preventDefault();
+            window.location.href = 'thongtintaikhoan.html';
+        });
+    }
+});
+
+	</script>
+</body>
+
+</html>

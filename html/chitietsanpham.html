@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title id="title"></title>
+	<link rel="shortcut icon" href="../img/favicon.png" />
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/style_chitietsanpham.css">
+	<script src="../js/jquery-3.7.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+	<section class="myheader">
+		<div class="container py-2">
+			<div class="row">
+				<div class="col-md-3 text-center">
+					<a href="index.html" class="">
+						<img src="../img/logo.png"  class="img-fluid" alt="Logo" style="width: 110px;height: 90px;">
+					</a>
+				</div>
+
+				<div class="col-md-4">
+					<div class="input-group mb-3">
+						<input type="text" class="form-control mt-4" placeholder="Tìm kiếm...">
+						<span class="input-group-text mt-4" id="search"><i
+								class="fa-solid fa-magnifying-glass"></i></span>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="row mt-4">
+						<div class="col">
+							<div class="row">
+								<div class="col-md-3 ">
+									<div class="fs-3">
+										<a href="tel:0123456789" class="text-dark"><i class="fa-solid fa-phone"></i></a>
+									</div>
+								</div>
+								<div style="margin-top: 7px;" class="col-md-9">
+									<strong><span class="text-dark">Liên hệ</span></strong><br>
+								</div>
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="row">
+								<div class="col-md-3">
+									<div class="fs-3">
+										<a href="login.html" class="text-dark" id="login_taikhoan"><i
+												class="fa-regular fa-circle-user"></i></a>
+									</div>
+								</div>
+								<div style="margin-top: 7px;" class="col-md-9" id="loginText" >
+									<strong><span id="loginLink" class="text-dark" style="text-decoration: none;">Đăng
+											nhập</span></strong>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col mt-4">
+					<div class="row">
+						<div class="col-md-4">
+							<a href="giohang.html" class="position-relative">
+								<span class="fs-2">
+									<i class="fa-solid fa-cart-shopping" style="color: black;"></i>
+								</span>
+							</a>						
+						</div>
+						<div style="margin-top: 1px;margin-left: -25px;" class="col-md text-center">
+							<strong><span class="text-dark" style="text-decoration: none;display: inline;text-align: center;">Giỏ hàng</span></strong>
+						</div>
+						
+						<div class="col">
+							<a href="thongtintaikhoan.html" class="position-relative">
+								<span class="fs-2 ms-4">
+									<i class="fa-solid fa-circle-user" style="color: black;"></i>
+								</span>
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="mymenu">
+		<div class="container bg-light">
+			<div class="row align-items-center">
+				<div class="col-md-9">
+					<nav class="navbar navbar-expand-lg bg-light">
+						<div class="container-fluid">
+							<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+								<!-- Xóa class me-auto -->
+								<ul class="navbar-nav nav-tabs mb-2 mb-lg-0">
+									<li class="nav-item">
+										<a class="nav-link" aria-disabled="true" href="index.html">Trang chủ</a>
+									</li>
+									<li class="nav-item" onclick="scrollToProductTitle()">
+										<a class="nav-link" href="banchay.html">Bán chạy</a>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" role="button"
+											data-bs-toggle="dropdown" aria-expanded="false">
+											Sản phẩm
+										</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#" onclick="scrollToProductTitle()">Đồ bé trai</a></li>
+											<li><a class="dropdown-item" href="#" onclick="scrollToProductTitle2()">Đồ bé gái</a></li>
+											<li><a class="dropdown-item" href="#" onclick="scrollToProductTitle()">Đồ bộ</a></li>
+											<li><a class="dropdown-item" href="#" onclick="scrollToProductTitle()">Đồ đôi</a></li>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<a href="gioithieu.html" class="nav-link" aria-disabled="true">Giới thiệu</a>
+									</li>
+									
+									<li class="nav-item">
+										<a href="vai.html" class="nav-link" aria-disabled="true">Các loại vải</a>
+									</li>
+									<li class="nav-item">
+										<a href="tuvan.html" class="nav-link" aria-disabled="true">Tư vấn</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="mymaincontent my-3">
+		<main role="main">
+			<div class="container mt-4">
+				<div class="card">
+					<div class="container-fliud">
+						<form name="frmsanphamchitiet" id="frmsanphamchitiet" method="post">
+							<div class="wrapper row">
+								<div class="preview col-md-6">
+									<div class="tab-pane" id="pic">
+
+									</div>
+								</div>
+								<div class="details col-md-6">
+									<h3 class="product-title" id="product-title">
+
+									</h3>
+									<div class="rating">
+										<div class="stars">
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+										</div>
+										<span class="review-no">50 reviews</span>
+									</div>
+									<br><br><br><br>
+									<p class="product-description ms-4" id="product-description">Mã Số Sản Phẩm: AO123</p>
+									<small class="text-muted ms-5">Giá cũ: <s><span>1.999.000 vnđ</span></s></small>
+									<h4 class="price mt-3 ms-3" id="price"> </h4>
+									
+									</p>
+									<div class="quantity buttons_added d-flex  ms-lg-5">
+										<input type="button" value="-" class="minus button is-form">
+										<input type="number" id="quantity" class="input-text qty text" value="1"
+											aria-label="Product quantity" size="4" min="0" max="10" step="1"
+											placeholder="" inputmode="numeric" autocomplete="off">
+										<input type="button" value="+"  class="plus button is-form">
+									</div>
+									<div class="action">
+										<a class="add-to-cart btn btn-default" id="btnThemVaoGioHang">Thêm vào giỏ
+											hàng</a>
+										<a class="like btn btn-default" href="#"><span class="fa fa-heart"></span></a>
+									</div>
+								</div>
+
+
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="card mt-4">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col">
+								<h3>Thông tin Sản phẩm</h3>
+								<br>
+								<div class="col-inner">
+									<div class="icon-box-text last-reset">
+										<div class="text thong-tin">
+											<div class="thong-tin-san-pham">
+												<p><strong>Nhà sản xuất: </strong>Việt Nam Capital</p>
+												<p><strong>Số hiệu sản phẩm:</strong> <a
+														rel="noopener noreferrer">AO123</a></p>
+												<p><strong>Bộ sưu tập: </strong> Thu đông 2024</p>
+												<p><strong>Xuất xứ:</strong> Anh</p>
+												<p><strong>Giới tính:</strong> Nam</p>
+												<p><strong>Chất liệu:</strong> Cotton </p>
+												<p><strong>Chiều dài áo:</strong> 45 cm</p>
+												<p><strong>Chiều rộng áo:</strong> 42 cm</p>
+												<p><strong>Màu sắc: </strong>Đỏ đô</p>
+												<p><strong>Công nghệ may:</strong>Ultra polieste</p>
+												<p><strong>Đổi trả :</strong> 7 ngày </p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="col-inner">
+									<h3>Chi tiết sản phẩm</h3>
+									<br>
+									<div class="icon-box-text last-reset">
+										<div class="text thong-tin">
+											<div class="thong-tin-san-pham">
+												<p>Áo AO123 được thiết kế dành riêng cho các bé với chất liệu cotton mềm mại, an toàn cho làn da nhạy cảm. Kiểu dáng dễ thương, họa tiết bắt mắt, giúp bé luôn thoải mái và tự tin khi vận động. Đặc biệt, áo dễ phối với nhiều trang phục, phù hợp cho mọi dịp từ đi học đến vui chơi.
+
+												</p><br>
+												<p>🌟 AO123 – Món quà hoàn hảo để bé yêu thêm phong cách và đáng yêu!</p>
+												<img src="../img/logo.png" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</main>
+	</section>
+	<div id="reviews" class="woocommerce-Reviews">
+		<div id="comments">
+			<div class="woocommerce-noreviews comment-count"><span>Góp Ý</span></div>
+		</div>
+		<div id="review_form_wrapper">
+			<div id="review_form">
+				<div id="respond" class="comment-respond">
+					<form method="post" id="commentform" class="comment-form">
+						<p class="comment-notes"><span id="email-notes">Ý kiến của bạn sẽ giúp chúng tôi hoàn thiện hơn </span>.</span>
+						<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8"
+								placeholder="Để lại cảm nghĩ của bạn nhé!" required=""></textarea></p>
+						<p class="form-submit" style="display: none;"><input name="submit" type="submit" id="submit"
+								class="btn btn--normal" value="Đăng thảo luận"> <input type="hidden"
+								name="comment_post_ID" value="258102" id="comment_post_ID">
+							<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+						</p>
+						<button type="button" class="btn btn-success form-control">Xác nhận</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<div class="product-list mb-3">
+		<div class="product_title border-bottom" id="productTitle">
+			<strong style="color: rgb(205, 46, 121);">Đồ bé trai</strong>
+		</div>
+		<div class="product_list-s py-3" id="listProduct_nam">
+			
+		</div>
+	</div>
+	<div id="product-nu" class="product-list mb-3">
+		<div class="product_title border-bottom" id="productlist2">
+			<strong style="color: rgb(234, 104, 164);">Đồ bé gái</strong>
+		</div>
+		<div class="product_list-s py-3" id="listProduct_nu">
+
+		</div>
+	</div>
+
+	<section class="footer bg-dark text-white py-4">
+		<hr>
+		<div class="row">
+			<div class="col-md-6 ">
+				<h5 class="m-lg-1">Công Tuyền - Thế giới đồ cho bé </h5>
+				<p class="m-0 m-lg-1">Cung cấp nhiều mẫu quần áo chất lượng </p>
+				<p class="m-0 m-lg-1">Địa chỉ: Nguyễn Văn Bảo, Gò Vấp, TP.HCM</p>
+				<p class="m-0 m-lg-1">Email: congtuyen@gmail.com</p>
+				
+				<p class="m-0 m-lg-1">Điện thoại: 0123456789</p>
+			</div>
+			<div class="col-md-6 contact">
+				<div class="row">
+					<div class="col">
+						<a href="sitemap.html"><img src="../img/logo.png" style="width: 140px; height: 120px;"></a><br>
+					</div>
+					<div class="col mt-3">
+						<a href="https://maps.app.goo.gl/r5DUL1pTx5QvgKiU8" target="_blank"><i class="fa-solid fa-location-dot fs-5 mb-3"></i></a>Location <br>
+						<a href="https://mail.google.com/mail/?view=cm&fs=1&to=congtuyen@gmail.com&su=Chào bạn&body=Nội dung của email" target="_blank"><i class="fa-solid fa-envelope fs-5 mb-3"></i></a>Email <br>
+						<a href="tel:0123456789"><i class="fa-solid fa-phone fs-5 mb-3"></i></a>Phone <br>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+	</div>
+</section>
+
+</section>
+	<script>
+		if (localStorage.getItem('username')) {
+			var username = localStorage.getItem('username');
+			var spanElement = document.getElementById('loginLink');
+			spanElement.innerText = username;
+			$("#login_taikhoan").click(function (e) {
+				e.preventDefault();
+                window.location.href = 'thongtintaikhoan.html';
+            });
+		}
+		var quantityInput = document.getElementById('quantity');
+
+		var minusButton = document.querySelector('.minus');
+		var plusButton = document.querySelector('.plus');
+
+		plusButton.addEventListener('click', function () {
+			var currentValue = parseInt(quantityInput.value);
+			var maxValue = parseInt(quantityInput.getAttribute('max'));
+			if (!isNaN(maxValue) && currentValue >= maxValue) return;
+			quantityInput.value = currentValue + 1;
+		});
+		minusButton.addEventListener('click', function () {
+			var currentValue = parseInt(quantityInput.value);
+			var minValue = parseInt(quantityInput.getAttribute('min'));
+			if (!isNaN(minValue) && currentValue <= minValue) return;
+			quantityInput.value = currentValue - 1;
+		});
+
+	</script>
+	<script src="../js/index.js"></script>
+	<script src="../js/item.js"></script>
+</body>
+
+</html>

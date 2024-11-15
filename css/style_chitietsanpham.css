@@ -1,0 +1,383 @@
+.li_menu a{
+    text-decoration: none;
+    color: pink;
+}
+
+.contact a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+.login a{
+    text-decoration: none;
+    color: #fff;
+}
+.login a:hover{
+    color: red;
+}
+
+.nav-link{
+    cursor: pointer;
+    color: #d678c9;
+    margin-left: 20px;
+    text-align: center;
+    font-size: larger ;
+}
+.nav-item a:hover{
+    color: red;
+}
+.dropdown-menu a:hover{
+    color: red;
+}
+
+.catetory-icon h5{
+    text-align: center;
+    justify-content: center;
+}
+
+.btn{
+    border: none;
+}
+
+.myheader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: pink;
+}
+
+.mymenu{
+    margin-top: 105px;
+}
+
+.product_list-s{
+    overflow: hidden;
+}
+.product_list-s img{
+    display: block;
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.product_list-s img:hover{
+    transform: scale(1.1);
+}
+
+.box-image {
+    margin-top: 15px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-zoom {
+    transition: transform 0.6s ease;
+}
+
+.image-zoom:hover {
+    transform: scale(1.1);
+}
+
+.box-text-inner{
+    margin-top: 5px;
+}
+
+/* .product-small .box-image .hover-image {
+    display: none;
+}
+
+.product-small .box-image:hover .default-image {
+    display: none;
+}
+
+.product-small .box-image:hover .hover-image {
+    display: block;
+} */
+.product-small .box-text-products .name a {
+    color: #2c1c2a;
+    text-decoration: none;
+}
+
+.col-md-4 {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+img {
+    max-width: 100%;
+}
+
+
+
+.tab-content {
+    overflow: hidden;
+}
+
+.tab-content img {
+    width: 100%;
+    -webkit-animation-name: opacity;
+    animation-name: opacity;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+}
+
+.card {
+    background: #bde7f8;
+    padding: 3em;
+    line-height: 1.5em;
+}
+
+.checked,
+.price span {
+    color: #9e2d48;
+}
+
+
+
+.product-title {
+    margin-top: 0;
+}
+
+.size {
+    margin-right: 10px;
+}
+
+.size:first-of-type {
+    margin-left: 40px;
+}
+
+
+
+.color:first-of-type {
+    margin-left: 20px;
+}
+
+.add-to-cart,
+.like {
+    background: #396bc2;
+    padding: 1.2em 1.5em;
+    border: none;
+    text-transform: UPPERCASE;
+    font-weight: bold;
+    color: #fff;
+    -webkit-transition: background .3s ease;
+    transition: background .3s ease;
+}
+
+.add-to-cart:hover,
+.like:hover {
+    background: #284cec;
+    color: #fff;
+}
+
+.not-available {
+    text-align: center;
+    line-height: 2em;
+}
+
+.not-available:before {
+    font-family: fontawesome;
+    content: "\f00d";
+    color: #fff;
+}
+
+.orange {
+    background: #ff9f1a;
+}
+
+.green {
+    background: #85ad00;
+}
+
+.blue {
+    background: #0076ad;
+}
+
+.tooltip-inner {
+    padding: 1.3em;
+}
+
+
+.action{
+    margin-top: 10px;
+}
+#reviews {
+    margin-top: 20px; /* Adjust as needed */
+}
+
+#comments {
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+
+
+#review_form_wrapper {
+    margin-top: 20px;
+}
+
+#respond {
+    margin-top: 20px;
+}
+
+#reply-title {
+    margin-bottom: 10px; 
+}
+
+.comment-form-comment textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.comment-form-author input,
+.comment-form-email input,
+.comment-form-phone input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px; 
+}
+
+.form-submit input {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-submit input:hover {
+    background-color: #0056b3;
+}
+#reviews{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    max-width: 1320px;
+    margin: 0 auto  20px;
+}
+.product-list{
+    justify-content: center;
+    align-items: center;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+input[type=number]{
+    border: none;
+    box-shadow: none;
+    min-height: auto;
+    height: auto;
+    min-width: auto;
+    width: 2rem;
+}
+input[type=button].minus, input[type=button].plus {
+    min-height: auto;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border: thin solid #ccc!important;
+    border-radius: 5px!important;
+    background: #fff;
+}
+/*  */
+/* Phải thêm .chitietSanpham để không trùng với h1 của taikhoan */
+.chitietSanpham h1 {
+    display: block;
+    margin: 0 0 0 10px;
+    float: left;
+    overflow: hidden;
+    /*khi k đủ chứa text thì phần text bị dư sẽ giấu đi*/
+    font-size: 24px;
+    color: #333;
+    line-height: 40px;
+    /*tăng khoảng cách dòng*/
+}
+
+.rating {
+    float: left;
+    margin-left: 15px;
+    line-height: 40px;
+}
+
+.fa-star,
+.fa-star-o {
+    color: rgb(255, 0, 38);
+}
+#listProduct_nam{
+    background-color: rgb(218, 250, 240);
+    border-radius: 8px;
+}
+#listProduct_nu{
+    background-color: rgb(247, 226, 245);
+    border-radius: 8px;
+}
+
+/* Giá hiện tại */
+#price {
+    font-size: 20px;
+    color: #d9534f;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Giá cũ (nếu có) */
+#old-price {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Số lượng và nút thêm vào giỏ hàng */
+.quantity-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.quantity-container input {
+    width: 50px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+/* Container chính cho sản phẩm */
+#product-container {
+    display: flex;
+    justify-content: space-between; /* Giữ khoảng cách giữa các phần tử trái-phải */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    padding: 20px;
+    background-color: #e0f7ff; /* Màu nền giống trong ảnh */
+}
+
+/* Khu vực hiển thị hình ảnh sản phẩm */
+#pic {
+    flex: 1;
+    max-width: 400px;
+    height: 400px; /* Đặt chiều cao cụ thể */
+    overflow: hidden; /* Ẩn phần ảnh bị cắt */
+}
+
+#pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cắt ảnh và đảm bảo ảnh lấp đầy phần chứa */
+    object-position: center; /* Căn giữa ảnh trong phần chứa */
+}
+
+/* Khu vực hiển thị thông tin sản phẩm */
+#product-info {
+    flex: 1.2;
+    padding-left: 40px;
+    background-color: #fff; /* Màu nền trắng */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

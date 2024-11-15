@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Công Tuyền - Thế Giới Đồ Cho Bé</title>
+	<link rel="shortcut icon" href="../img/logo.png" />
+    <link rel="stylesheet" href="../css/style_login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form onsubmit="signup()">
+                <h1>Tạo tài khoản</h1>
+                <div class="social-container">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                </div>
+                <span>Tạo với email</span>
+                <input type="text" id="username" placeholder="Tài Khoản" />
+                <input type="email" id="email" placeholder="Email" />
+                <input type="password" id="password" placeholder="Mật khẩu" />
+                <button id="dangky" class="btn">Tạo tài khoản</button>
+                <p class="account-text">Bạn đã có tài khoản?<a href="#" id="sign-in-btn2">Đăng nhập</a></p>
+            
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form onsubmit="signin()">
+                <h1>Đăng nhập</h1>
+                <div class="social-container">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                </div>
+                <span><strong>Tài khoản</strong></span>
+                <input type="text" id="taikhoan" placeholder="Tài Khoản" />
+                <input type="password" id="matkhau" placeholder="Mật khẩu" />
+                <button id="dangnhap" class="btn">Đăng nhập</button>
+                <p class="account-text">Bạn chưa có tài khoản? <a id="sign-up-btn2">Đăng ký</a></p>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Đăng Nhập Vào Tài Khoản Của Bạn</h1>
+                    <p>Để dễ dàng mua hàng hơn nhé !</p>
+                    <button class="ghost" id="sign-in-btn">Đăng nhập</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Bạn Chưa Có Tài Khoản !</h1>
+                    <p>Kết nối với chúng mình ngay nào .</p>
+                    <button class="ghost" id="sign-up-btn">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script>
+        var usernameValidated = false;
+        var passwordValidated = false;
+        var emailValidated = false;
+
+        function validateSignupForm() {
+        var username = document.getElementById('username').value;
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+
+        // Kiểm tra các ô có được điền đầy đủ không
+        if (!username || !email || !password) {
+            alert("Vui lòng điền đủ thông tin vào tất cả các ô!");
+            return false;
+        }
+
+        // Kiểm tra tài khoản với biểu thức chính quy
+        var reg_tendangnhap = /^[a-zA-Z][a-zA-Z0-9!@#$%^&*()]*$/;
+        if (!reg_tendangnhap.test(username)) {
+            alert("Tên đăng nhập phải bắt đầu bằng chữ cái, có thể chứa chữ số, ký tự đặc biệt và không chứa khoảng trắng.");
+            return false;
+        }
+
+        // Kiểm tra email với biểu thức chính quy
+        var reg_email = /^\w+[!@#$%^&*()]*(@gmail.com)$/;
+        if (!reg_email.test(email)) {
+            alert("Vui lòng nhập đúng địa chỉ email, chỉ chấp nhận dạng @gmail.com");
+            return false;
+        }
+
+        // Kiểm tra mật khẩu với biểu thức chính quy
+        var reg_mk = /^(?=.*[0-9])(?=.*[A-Z])(?=.*[!@#$%^&*()]).{8,}$/;
+        if (!reg_mk.test(password)) {
+            alert("Mật khẩu phải có ít nhất 8 ký tự, bao gồm ít nhất 1 ký tự số, 1 ký tự in hoa và 1 ký tự đặc biệt.");
+            return false;
+        }
+
+        // Nếu tất cả các kiểm tra đều hợp lệ
+        alert("Đăng ký thành công!");
+        return true;
+    }
+
+        function signup() {
+            event.preventDefault(); // Ngăn chặn form gửi đi
+        if (validateSignupForm()) {
+            var username = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+
+            // Lưu thông tin vào localStorage (giả lập đăng ký)
+            localStorage.setItem("username", username);
+            localStorage.setItem("email", email);
+            localStorage.setItem("password", password);
+
+            // Chuyển người dùng sang trang đăng nhập hoặc thông báo thành công
+            alert("Đăng ký thành công, vui lòng đăng nhập.");
+            document.getElementById('container').classList.remove('right-panel-active');
+        }
+
+        }
+
+        function signin() {
+            event.preventDefault();
+            var username = document.getElementById('taikhoan').value;
+            var password = document.getElementById('matkhau').value;
+            var user = localStorage.getItem('username');
+            var pass = localStorage.getItem('password');
+
+            if (!user || username == "" || password == "") {
+                alert('Tài khoản hoặc mật khẩu không chính xác!');
+            } else {
+                if (username == user && password == pass) {
+                    alert('Đăng nhập thành công!');
+                    window.location.href = 'index.html';
+                } else {
+                    alert('Đăng nhập thất bại');
+                }
+            }
+        }
+
+    </script>
+    <script>
+        
+        const signUpButton = document.getElementById('sign-up-btn');
+        const signInButton = document.getElementById('sign-in-btn');
+        const container = document.getElementById('container');
+        signUpButton.addEventListener('click', () => {
+            container.classList.add('right-panel-active');
+        });
+
+        signInButton.addEventListener('click', () => {
+            container.classList.remove('right-panel-active');
+        });
+    </script>
+</body>
+</html>

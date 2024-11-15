@@ -1,0 +1,122 @@
+.li_menu a{
+    text-decoration: none;
+    color: pink;
+}
+
+.contact a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+.login a{
+    text-decoration: none;
+    color: #fff;
+}
+.login a:hover{
+    color: red;
+}
+
+.nav-link{
+    cursor: pointer;
+    color: #d678c9;
+    margin-left: 20px;
+    text-align: center;
+    font-size: larger ;
+}
+.nav-item a:hover{
+    color: red;
+}
+.dropdown-menu a:hover{
+    color: red;
+}
+
+.catetory-icon h5{
+    text-align: center;
+    justify-content: center;
+}
+
+.btn{
+    border: none;
+}
+
+.myheader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: pink;
+}
+
+.mymenu{
+    margin-top: 105px;
+}
+
+.gird-ft-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    width: 30%;
+}
+
+.col-md-4 {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+.table > thead{
+    background-color: #6fb3fc;
+}
+.table >tbody{
+    background-color: rgb(158, 215, 248);
+}
+th, td {
+    text-align: center; /* Căn giữa theo chiều ngang */
+    vertical-align: middle; /* Căn giữa theo chiều dọc */
+    padding: 10px; /* Khoảng cách giữa nội dung và đường viền ô */
+    border: 1px solid #ddd; /* Đường viền bảng */
+}
+
+#datarow tr td img{
+    width: 150px;
+    height: auto;
+    vertical-align: middle;
+    text-align: center; 
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.payment-box {
+    background-color: #fff;
+    width: 360px;
+    height: 220px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.btn{
+    margin-top: 100px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}

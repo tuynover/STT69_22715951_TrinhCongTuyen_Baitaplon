@@ -1,0 +1,106 @@
+.li_menu a{
+    text-decoration: none;
+    color: pink;
+}
+
+.contact a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+.login a{
+    text-decoration: none;
+    color: #fff;
+}
+.login a:hover{
+    color: red;
+}
+
+.nav-link{
+    cursor: pointer;
+    color: #d678c9;
+    margin-left: 20px;
+    text-align: center;
+    font-size: larger ;
+}
+.nav-item a:hover{
+    color: red;
+}
+.dropdown-menu a:hover{
+    color: red;
+}
+
+.catetory-icon h5{
+    text-align: center;
+    justify-content: center;
+}
+
+.btn{
+    border: none;
+}
+
+.myheader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: pink;
+}
+
+.mymenu{
+    margin-top: 105px;
+}
+
+
+.banner .row {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.description h2 {
+    font-size: 40px;
+    color: #d62430;
+    text-align: center;
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+.banner .description .desc {
+    margin-bottom: 30px;
+}
+
+
+
+.links ul {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+}
+
+.links ul a {
+    text-decoration: none;
+    color: #000;
+}
+
+.links ul li:nth-child(2) a {
+    color: red;
+    margin-left: 5px;
+}
+
+.col-md-4 {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+.tuvan{
+    background-color: rgb(247, 191, 195);
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+.label{
+    color: #974e9a;;
+    font-size: 30px;
+}

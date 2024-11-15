@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Công Tuyền - Thế Giới Đồ Cho Bé</title>
+	<link rel="shortcut icon" href="../img/logo.png" />
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/style_vai.css">
+	<script src="../js/jquery-3.7.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />	
+</head>
+<body>
+	<section class="myheader">
+		<div class="container py-2">
+			<div class="row">
+				<div class="col-md-3 text-center">
+					<a href="index.html" class="">
+						<img src="../img/logo.png"  class="img-fluid" alt="Logo" style="width: 110px;height: 90px;">
+					</a>
+				</div>
+
+				<div class="col-md-4">
+					<div class="input-group mb-3">
+						<input type="text" class="form-control mt-4" placeholder="Tìm kiếm...">
+						<span class="input-group-text mt-4" id="search"><i
+								class="fa-solid fa-magnifying-glass"></i></span>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="row mt-4">
+						<div class="col">
+							<div class="row">
+								<div class="col-md-3 ">
+									<div class="fs-3">
+										<a href="tel:0123456789" class="text-dark"><i class="fa-solid fa-phone"></i></a>
+									</div>
+								</div>
+								<div style="margin-top: 7px;" class="col-md-9">
+									<strong><span class="text-dark">Liên hệ</span></strong><br>
+								</div>
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="row">
+								<div class="col-md-3">
+									<div class="fs-3">
+										<a href="login.html" class="text-dark" id="login_taikhoan"><i
+												class="fa-regular fa-circle-user"></i></a>
+									</div>
+								</div>
+								<div style="margin-top: 7px;" class="col-md-9" id="loginText" >
+									<strong><span id="loginLink" class="text-dark" style="text-decoration: none;">Đăng
+											nhập</span></strong>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col mt-4">
+					<div class="row">
+						<div class="col-md-4">
+							<a href="giohang.html" class="position-relative">
+								<span class="fs-2">
+									<i class="fa-solid fa-cart-shopping" style="color: black;"></i>
+								</span>
+							</a>						
+						</div>
+						<div style="margin-top: 1px;margin-left: -25px;" class="col-md text-center">
+							<strong><span class="text-dark" style="text-decoration: none;display: inline;text-align: center;">Giỏ hàng</span></strong>
+						</div>
+						
+						<div class="col">
+							<a href="thongtintaikhoan.html" class="position-relative">
+								<span class="fs-2 ms-4">
+									<i class="fa-solid fa-circle-user" style="color: black;"></i>
+								</span>
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="mymenu">
+		<div class="container bg-light">
+			<div class="row align-items-center">
+				<div class="col-md-9">
+					<nav class="navbar navbar-expand-lg bg-light">
+						<div class="container-fluid">
+							<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+								<!-- Xóa class me-auto -->
+								<ul class="navbar-nav nav-tabs mb-2 mb-lg-0">
+									<li class="nav-item">
+										<a class="nav-link" aria-disabled="true" href="index.html">Trang chủ</a>
+									</li>
+									<li class="nav-item" onclick="scrollToProductTitle()">
+										<a class="nav-link" href="banchay.html">Bán chạy</a>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" role="button"
+											data-bs-toggle="dropdown" aria-expanded="false">
+											Sản phẩm
+										</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#" onclick="scrollToProductTitle()">Đồ bé trai</a></li>
+											<li><a class="dropdown-item" href="#" onclick="scrollToProductTitle2()">Đồ bé gái</a></li>
+											<li><a class="dropdown-item" href="#" onclick="scrollToProductTitle()">Đồ bộ</a></li>
+											<li><a class="dropdown-item" href="#" onclick="scrollToProductTitle()">Đồ đôi</a></li>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<a href="gioithieu.html" class="nav-link" aria-disabled="true">Giới thiệu</a>
+									</li>
+									
+									<li class="nav-item">
+										<a href="vai.html" class="nav-link" aria-disabled="true">Các loại vải</a>
+									</li>
+									<li class="nav-item">
+										<a href="tuvan.html" class="nav-link" aria-disabled="true">Tư vấn</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+    <div class="container mt-5">
+		<h2 class="label text-center">Ưu và Nhược điểm của Các Loại Chất Liệu Vải Quần Áo</h2>
+		<table class="table table-bordered mt-4">
+			<thead class="table-primary">
+				<tr>
+					<th>Chất liệu vải</th>
+					<th>Ưu điểm</th>
+					<th>Nhược điểm</th>
+					<th>Ảnh minh họa</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Cotton</td>
+					<td>
+						- Thoáng khí, thoải mái<br>
+						- Hấp thụ ẩm tốt<br>
+						- Dễ chăm sóc và giặt
+					</td>
+					<td>
+						- Dễ nhăn<br>
+						- Có thể co rút khi giặt lần đầu
+					</td>
+					<td><img src="../img/material/cotton.png" alt="Cotton" class="img-fluid" style="max-width: 100px;"></td>
+				</tr>
+				<tr>
+					<td>Polyester</td>
+					<td>
+						- Bền, không nhăn<br>
+						- Khô nhanh, chống ẩm tốt<br>
+						- Giữ màu sắc lâu
+					</td>
+					<td>
+						- Ít thoáng khí hơn cotton<br>
+						- Có thể gây cảm giác nóng khi mặc
+					</td>
+					<td><img src="../img/material/poly.jpg" alt="Polyester" class="img-fluid" style="max-width: 100px;"></td>
+				</tr>
+				<tr>
+					<td>Vải Lanh</td>
+					<td>
+						- Siêu thoáng khí, mát mẻ<br>
+						- Tính kháng khuẩn tốt<br>
+						- Dễ dàng thấm hút ẩm
+					</td>
+					<td>
+						- Dễ nhăn và khó bảo quản<br>
+						- Có thể cứng và không thoải mái khi mới sử dụng
+					</td>
+					<td><img src="../img/material/lanh.jpg" alt="Linen" class="img-fluid" style="max-width: 100px;"></td>
+				</tr>
+				<tr>
+					<td>Vải Len</td>
+					<td>
+						- Giữ ấm tốt, thoáng khí<br>
+						- Tính đàn hồi cao<br>
+						- Kháng khuẩn tự nhiên
+					</td>
+					<td>
+						- Có thể gây ngứa cho một số người<br>
+						- Khó giặt và dễ bị co lại
+					</td>
+					<td><img src="../img/material/len.jpg" alt="Wool" class="img-fluid" style="max-width: 100px;"></td>
+				</tr>
+				<tr>
+					<td>Vải lụa</td>
+					<td>
+						- Mềm mại, sang trọng<br>
+						- Bóng mượt, thẩm mỹ cao<br>
+						- Thoáng khí tốt
+					</td>
+					<td>
+						- Dễ hỏng, yêu cầu bảo quản cẩn thận<br>
+						- Đắt tiền và khó giặt
+					</td>
+					<td><img src="../img/material/lụa.jpg" alt="Silk" class="img-fluid" style="max-width: 100px;"></td>
+				</tr>
+				<tr>
+					<td>Rayon - Tơ nhân tạo</td>
+					<td>
+						- Mềm mại, thoải mái<br>
+						- Thoáng khí, thấm hút ẩm tốt<br>
+						- Dễ nhuộm màu
+					</td>
+					<td>
+						- Dễ nhăn và co rút<br>
+						- Ít bền hơn so với các loại vải khác
+					</td>
+					<td><img src="../img/material/tonhantao.jpg" alt="Rayon" class="img-fluid" style="max-width: 100px;"></td>
+				</tr>
+				<tr>
+					<td>Spandex (Elastane) - Sợi nhân tạo</td>
+					<td>
+						- Co giãn tốt, tạo cảm giác thoải mái<br>
+						- Duy trì hình dạng tốt
+					</td>
+					<td>
+						- Dễ bị hỏng khi tiếp xúc với nhiệt độ cao<br>
+						- Không thấm hút ẩm tốt như các loại vải khác
+					</td>
+					<td><img src="../img/material/soinhantao.jpg" alt="Spandex" class="img-fluid" style="max-width: 100px;"></td>
+				</tr>
+				<tr>
+					<td>Nylon</td>
+					<td>
+						- Bền, nhẹ và đàn hồi tốt<br>
+						- Khô nhanh và chống nước tốt
+					</td>
+					<td>
+						- Ít thoáng khí hơn cotton và linen<br>
+						- Có thể gây cảm giác nóng khi mặc lâu
+					</td>
+					<td><img src="../img/material/nilon.webp" alt="Nylon" class="img-fluid" style="max-width: 100px;"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+	
+
+	<section class="footer bg-dark text-white py-4">
+		<hr>
+		<div class="row">
+			<div class="col-md-6 ">
+				<h5 class="m-lg-1">Công Tuyền - Thế giới đồ cho bé </h5>
+				<p class="m-0 m-lg-1">Cung cấp nhiều mẫu quần áo chất lượng </p>
+				<p class="m-0 m-lg-1">Địa chỉ: Nguyễn Văn Bảo, Gò Vấp, TP.HCM</p>
+				<p class="m-0 m-lg-1">Email: congtuyen@gmail.com</p>
+				
+				<p class="m-0 m-lg-1">Điện thoại: 0123456789</p>
+			</div>
+			<div class="col-md-6 contact">
+				<div class="row">
+					<div class="col">
+						<a href="sitemap.html"><img src="../img/logo.png" style="width: 140px; height: 120px;"></a><br>
+					</div>
+					<div class="col mt-3">
+						<a href="https://maps.app.goo.gl/r5DUL1pTx5QvgKiU8" target="_blank"><i class="fa-solid fa-location-dot fs-5 mb-3"></i></a>Location <br>
+						<a href="https://mail.google.com/mail/?view=cm&fs=1&to=congtuyen@gmail.com&su=Chào bạn&body=Nội dung của email" target="_blank"><i class="fa-solid fa-envelope fs-5 mb-3"></i></a>Email <br>
+						<a href="tel:0123456789"><i class="fa-solid fa-phone fs-5 mb-3"></i></a>Phone <br>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+	</div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+	<script>
+		if (localStorage.getItem('username')) {
+			var username = localStorage.getItem('username');
+			var spanElement = document.getElementById('loginLink');
+			spanElement.innerText = username;
+			$("#login_taikhoan").click(function (e) {
+				e.preventDefault();
+                window.location.href = 'thongtintaikhoan.html';
+            });
+		}
+	</script>
+</body>
+</html>
